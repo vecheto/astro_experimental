@@ -1,0 +1,236 @@
+% Template:     Informe LaTeX
+% Documento:    Archivo principal
+% Versión:      7.1.9 (22/04/2021)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R.
+%        Facultad de Ciencias Físicas y Matemáticas
+%        Universidad de Chile
+%        pablo@ppizarror.com
+%
+% Manual template: [https://latex.ppizarror.com/informe]
+% Licencia MIT:    [https://opensource.org/licenses/MIT]
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[letterpaper,oneside]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\titulodelinforme {Informe Cinemática Galáctica}
+\def\temaatratar {}
+
+\def\autordeldocumento {Vicente Maldonado}
+\def\nombredelcurso {Astronomía Experimental}
+\def\codigodelcurso {AS3201-2}
+
+\def\nombreuniversidad {Universidad de Chile}
+\def\nombrefacultad {Facultad de Ciencias Físicas y Matemáticas}
+\def\departamentouniversidad {Departamento de Astronomía}
+\def\imagendepartamento {departamentos/das}
+\def\imagendepartamentoparams {height=1.57cm}
+\def\localizacionuniversidad {Santiago, Chile}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\tablaintegrantes {
+\begin{tabular}{ll}
+	Autor:
+	& \begin{tabular}[t]{l}
+		Vicente Maldonado A. \\
+	\end{tabular} \\
+	Profesor:
+	& \begin{tabular}[t]{l}
+		Leonardo Bronfman A.
+	\end{tabular} \\
+	Auxiliar:
+	& \begin{tabular}[t]{l}
+		Javier Silva F.
+	\end{tabular} \\
+	\multicolumn{2}{l}{Fecha de entrega: \today} \\
+\end{tabular}}{
+}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+	
+% PORTADA
+\templatePortrait
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% RESUMEN O ABSTRACT
+\begin{resumen}
+
+\end{resumen}
+
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\section{Introducción}
+La Vía Láctea es la galaxia en que vivimos, aqui se encuentra el Sistema Solar y una gran cantidad de objetos astronómicos, que van desde nebulosas y estrellas super masivas a planetas y asteroides, aunque en su mayoría se compone de nubes moleculares, principalmente de Hidrógeno gaseoso ($H_2$). Toda la materia que compone la Vía Láctea se encuentra orbitando al centro galáctico y a partir de la posición del Sol en la galaxia es posible configurar un sistema de coordenadas.\\
+
+Las coordenadas galácticas estan compuestas por una longitud y una latitud galáctica, la longitud (\emph{l}) es el ángulo que se forma respecto a la posición del Sol, como se representa en la Figura 1. La longitud separa la galaxia en cuatro cuadrantes, el centro galáctico es compartido por los cuadrantes I y IV. La trayectoria del Sol determina lo que se considera galaxia interior y galaxia exterior. Por otro lado, la latitud (\emph{b}) representa la elevación respecto al plano galactico, la Figura 2 es una recontruccion de cómo se observa el plano desde un observador en la Tierra y muestra esquemáticamente la latitud galáctica.
+
+\begin{figure}
+  \centering
+  \includegraphics[height=11cm]{../graficos/imagenes/coordenadas_galacticas.png}
+  \caption{Longitud galáctica \emhp{l} (NASA-JPL)}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=6cm]{../graficos/imagenes/plano_galactico.jpg}
+  \caption{Latitud galáctica \emph{b} (ESO).}
+\end{figure}
+
+Para la elaboración de este informe se utilizaron datos del IV cuadrante de la galaxia. Los datos se obtuvieron a patir de la potencia integrada en la línea de $CO$, que es un trazador de $H_2$. El Hidrógeno gaseoso es la molécula mas común del universo, pero al ser una molécula polar es muy dificil observarlo en líneas rotacionales, en cambio, el $CO$ tiene un momento dipolar mucho más fuerte y por eso se utiliza como trazador de este gas. La Ecuación 1 muestra cómo se relaciona la densidad de columna de Hidrógeno N($H_2$) [mol/$cm^2$] con la potencia integrada del Monóxido de Carbono W(CO) en la velocidad [K$\frac{km}{s}$]
+
+\begin{equation}
+    N(H_2) = \chi W(CO)
+\end{equation}
+
+La constante $\chi$ es medida experimentalmente y equivale a $2 \cdot 10^{20}$ $\frac{cm^{-2}}{K\frac{km}{s}}$.\\
+
+En la primera parte de este estudio se utilizó la velocidad de N($H_2$) para la obtención de la curva de rotación de la galaxia. Esta curva representa la velocidad de rotación de cada punto en función de su distancia al centro galáctico. Para medir las velocidades se utiliza el sistema de referencia LSR (\emph{Local Standart of Rest}) este se define como un punto que se mueve con una órbita perfectamente circular en torno al centro de la galaxia, con un radio igual a la distancia galacto-céntrica del Sol. Se mueve con una velocidad de $220$ km/s y tiene un radio de giro de $8.5$ kpc. La órbita del Sol no es exactamente la misma a la que hace referencia el sisema LSR, ya que la órbita del Sol no es perfectamente circular.\\
+
+Luego de obtener la curva de rotación, se obtendrá la corrugación de la galaxia a partir de las coordenadas de latitud, esta curva indica la forma que toma el plano galáctico en funcion de su distancia al centro.\\
+
+Finalmente, se estudiará la distribución de masa en la galaxia, realizando un ajuste a la curva de rotación obtenida permitiendo determinar qué modelo es más adecuado. El resultado obtenido demostró que la masa de la Via Láctea se distribuye en un disco de densidad uniforme con una masa puntual en su centro.\\
+
+\section{Curva de Rotación}
+\subsection{Marco Teórico}
+La obtencion de la curva de rotación requiere usar la ecuación maestra de la cinemática galáctica, esta ecuación se encuentra a partir del diagrama mostrado en la Figura 3, en donde se puede obtener:
+
+\begin{figure}
+  \centering
+  \includegraphics[height=10cm]{../graficos/imagenes/ecuacion_maestra.png}
+  \caption{Cinemática galáctica.}
+\end{figure}
+
+\begin{equation}
+     V_{LSR} = V(R)cos(\alpha) - V(R_0)sen(l) 
+\end{equation}
+
+Luego se puede utlizar el teorema del seno, para despejar $cos(\alpha)$, utilizando tambien que $\beta = 90 + \alpha$.
+
+$$\frac{sen(l)}{R}=\frac{cos(\alpha)}{R_0}$$
+
+$$sen(\beta) = sen(90 - \alpha) = cos(\alpha) = \frac{R_0}{R}sen(l)$$
+
+Reemplazando en (2) se obtiene la ecuación maestra de la cinemática galáctica:
+
+\begin{equation}
+    V_{LSR} = sen(l)(\frac{R_0}{R}V(R) - V(R_0))
+\end{equation}
+
+La velocidad $V_{LSR}$ es la única que se puede medir a través del efecto Doppler desde el Sistema Solar, ya que es la única componente que se va alejando del Sol. Para medir la velocidad tangencial se necesita entonces que $R = R_0 sen(l)$, reemplazando esto se tiene:
+
+$$ V(R=R_0 sen(l)) = V_{LSR} + V(R)sen(l)  $$
+
+Sin embargo, la curva de rotación necesita que las velocidades sean positivas ya que se esta representando un movimiento circular. En el cuadrante (IV), la longitud varía entre 270° y 360° por lo que $sen(l) < 0$, entonces se debe agregar valor absoluto a la ecuación, quedando la expresión final para la velocidad tangencial en función de $R$.
+
+\begin{equation}
+  V ( R=R_0 sen(l)) =   |V_{LSR}| + V(R) |sen(l)| 
+\end{equation}
+
+Mientras que para la velocidad angular, simplemente se usa la relación $V=\omega R$ y la ecuación a utilizar será:
+
+\begin{equation}
+  \omega ( R=R_0 sen(l)) =  R_0 sen(l)  V ( R=R_0 sen(l))
+\end{equation}
+
+La velocidad de referencia es $V_0 = 220$ km/s y el radio será $R_0 = 8.5$ kpc.
+
+\subsection{Detalle del Algoritmo}
+Inicialmente, para eliminar el ruido de los datos, se creó una función que recorre cada coordenada de latitud para una longitud dada, quedándose con la primera velocidad que sea 5 veces mayor al RMS (media cuadrática), guardándola en un arreglo. Despues se recorre cada coordenada de longitud aplicando esta función, obteniendo para cada longitud un arreglo de velocidades.\\
+
+Para cada una de las longitudes, se escoje el mayor valor de $V_{LSR}$ que corresponderá a un cierto radio $R=R_0 sen(l)$ según la Ecuación (4). Tanto la velocidad como el radio se guardan en su respectivo arreglo.\\
+
+Finalmente, se utiliza la Ecuación (4) para obtener $V(R)$ y $\omega (R)$ y poder graficar la curva de rotación.
+
+\subsection{Resultados}
+La curva de rotación obtenida para $V(R)$ se muestra en la Figura 4 y la de $\omega (R)$ en la Figura 5. 
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{../graficos/imagenes/curvavr.png}
+  \caption{Curva de Rotación V(R) en función de la distancia al centro galáctico.}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{../graficos/imagenes/curvaomegar.png}
+  \caption{Curva de Rotación $\omega(R)$ en función de la distancia al centro galáctico.}
+\end{figure}
+
+Se puede observar que la curva de $V(R)$ es creciente mientras que la curva de $\omega (R)$ es decreciente. Ambas curvas parten teniendo valores que dan saltos entre velocidades, pero que mas adelante se estabilizan. Además, ninguna de las dos parece tomar la forma de una funcion polinómica o exponencial/logarítmica.
+
+\section{Corrugación del Plano}
+\subsection{Marco Teórico}
+La corrugación de la galaxia se obtiene calculando la posición $Z$ del punto donde se encuentra la $V_{tan}$ para cada $R$, medida respecto al plano de la galaxia. La corrugación representa el "contorno" de la galaxia vista horizontalmente.
+
+\begin{figure}
+  \centering
+  \includegraphics[height=4cm]{../graficos/imagenes/curvaomegar.png}
+  \caption{Cálculo de Z a partir de D y $b_{Vmax}$.}
+\end{figure}
+
+Para calcular la corrugación del plano galáctico se debe obtener la posición $Z$ para cada radio $R$, a partir de la Figura 6 se puede calcular que:
+
+$$Z = D tan(b_{Vmax})$$
+
+A partir de la Figura 3 se tiene que si $R= R_0 sen(l)$ , entonces $D = R_0 cos(l)$, reemplazando se obtiene (aproximando $tan(b) \approx b $ )
+
+\begin{equation}
+    Z(R=R_0 sen(l)) = R_0 sen(l) tan(b_{Vmax}) \approx R_0 sen(l) b_{Vmax}
+\end{equation}
+
+En donde $b_{Vmax}$ corresponde a la coordenada de latitud galáctica para la velocidad tangencial ($V_{LSR}_{max}$)
+
+\subsection{Detalle del Algoritmo}
+Se utilizó el mismo algoritmo de la obtención de la curva de rotacion, de modo que cuando el algoritmo guardaba la valocidad máxima para cada longitud, tambien guardaba la coordenada de latitud en que se encontraba. Asi se formó un arreglo para la coordenada $b_{Vmax}$. Luego se utilizó la Ecuacion (6) para obtener la corrugación del plano galáctico.
+
+\subsection{Resultados}
+La Figura 7 muestra la corrugación del plano galáctico, se puede ver que toma valores entre -0.3 kpc y 0.2 kpc, aunque se concentra principalmente en valores positivos para distancias $R<4.5$ y negativos para valores $R>4.5$.
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{../graficos/imagenes/curvaomegar.png}
+  \caption{Corrugación del plano galáctico.}
+\end{figure}
+
+\section{Ajuste de Modelo de Masa}
+\subsection{Marco Teórico}
+
+
+\subsection{Detalle del Algoritmo}
+Se definieron funciones que a partir de los parámetros del modelo, obtienen la velocidad de rotación en función del radio, tal como se resume en la Figura 7.
+
+\begin{figure}
+    \begin{tabular}{| c | c |}
+     \hline
+    Distribucion de Masa     & Parámetros  \\ \hline
+    Puntual 	              &	$M_0$	\\
+    Esferica                  &	$\rho_0$	\\
+    Esferica con Masa Puntual &	$\rho_0$, $M_0$	\\
+    Disco       	          &	$S_0$	\\
+    Disco con Masa Puntual    &	$S_0$, $M_0$	\\
+    \hline
+    \end{tabular}
+    \caption{Parámetros a ajustar de cada distribución de masa.}
+\end{figure}
+
+Luego se realizó un ajuste que permitiera obtener los parámetros que mejor se ajustaran a la curva de rotación y asi poder graficar la curva de rotacion  real y la obtenida según cada modelo. El ajuste se realiza usando un método no lineal de mínimos cuadrados.\\
+
+Para determinar cuál se adapta mejor a la curva de rotación, se calculó el error cuadrático medio para cada una de las distribuciones de masa.
+
+\subsection{Resultados}
+
+\section{Análisis y Conclusiones}
+\section{Anexos}
+\end{document}
