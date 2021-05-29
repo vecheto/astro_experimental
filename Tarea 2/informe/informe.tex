@@ -62,7 +62,9 @@
 
 % RESUMEN O ABSTRACT
 \begin{resumen}
+La Vía Lactea esta compuesta mayoritariamente por Hidrógeno gaseoso ($H_2$), la medición de su velocidad de rotación alrededor del centro de la galaxia en el cuadrante \textrm{IV} entre longitudes de 300° y 348°, permitió obtener una curva de rotación, que demostró que la velocidad es \textbf{creciente} a medida aumenta la distancia galacto-céntrica. A partir de las coordenadas galácticas de los puntos utilizados para medir la velocidad tangencial se obtuvo la curva de corrugación del plano galáctico, ubicando espacialmente aquellos puntos, sugiriendo que forman un plano con alturas que varian entre $Z=0.245$ kpc y $Z=-2.887$ kpc.\\
 
+Finalmente se compararon diferentes modelos de distribución de masa de la galaxía, obeniendo que el mejor modelo corrresponde al de un disco con densidad superficial uniforme $S_0 = 5.888 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$].
 \end{resumen}
 
 
@@ -72,9 +74,9 @@
 % ======================= INICIO DEL DOCUMENTO =======================
 
 \section{Introducción}
-La Vía Láctea es la galaxia en que vivimos, aqui se encuentra el Sistema Solar y una gran cantidad de objetos astronómicos, que van desde nebulosas y estrellas super masivas a planetas y asteroides, aunque en su mayoría se compone de nubes moleculares, principalmente de Hidrógeno gaseoso ($H_2$). Toda la materia que compone la Vía Láctea se encuentra orbitando al centro galáctico y a partir de la posición del Sol en la galaxia es posible configurar un sistema de coordenadas.\\
+La Vía Láctea es la galaxia en que vivimos, donde se encuentra el Sistema Solar y una gran cantidad de objetos astronómicos, que van desde nebulosas y estrellas super masivas a planetas y asteroides. La Vía Láctea se compone su mayoría de nubes moleculares, principalmente de Hidrógeno gaseoso ($H_2$). Toda la materia de la galaxia se encuentra orbitando al centro galáctico y a partir de la posición del Sol en la galaxia es posible configurar un sistema de coordenadas.\\
 
-Las coordenadas galácticas estan compuestas por una longitud y una latitud galáctica, la longitud (\emph{l}) es el ángulo que se forma respecto a la posición del Sol, como se representa en la Figura 1. La longitud separa la galaxia en cuatro cuadrantes, el centro galáctico es compartido por los cuadrantes I y IV. La trayectoria del Sol determina lo que se considera galaxia interior y galaxia exterior. Por otro lado, la latitud (\emph{b}) representa la elevación respecto al plano galactico, la Figura 2 es una recontruccion de cómo se observa el plano desde un observador en la Tierra y muestra esquemáticamente la latitud galáctica.
+Las coordenadas galácticas estan compuestas por una longitud y una latitud galáctica, la longitud (\emph{l}) es el ángulo que se forma respecto a la posición del Sol, como se representa en la Figura 1. La longitud separa la galaxia en cuatro cuadrantes (\textrm{I}, \textrm{II}, \textrm{III} y \textrm{IV}), el centro galáctico es compartido por los cuadrantes \textrm{I} y \textrm{IV}. La trayectoria del Sol determina lo que se considera galaxia interior y galaxia exterior. Por otro lado, la latitud (\emph{b}) representa la elevación respecto al plano galactico, la Figura 2 es una recontruccion de cómo se observa el plano desde un observador en la Tierra y muestra esquemáticamente la latitud galáctica.
 
 \begin{figure}
   \centering
@@ -88,23 +90,25 @@ Las coordenadas galácticas estan compuestas por una longitud y una latitud gal�
   \caption{Latitud galáctica \emph{b} (ESO).}
 \end{figure}
 
-Para la elaboración de este informe se utilizaron datos del IV cuadrante de la galaxia. Los datos se obtuvieron a patir de la potencia integrada en la línea de $CO$, que es un trazador de $H_2$. El Hidrógeno gaseoso es la molécula mas común del universo, pero al ser una molécula polar es muy dificil observarlo en líneas rotacionales, en cambio, el $CO$ tiene un momento dipolar mucho más fuerte y por eso se utiliza como trazador de este gas. La Ecuación 1 muestra cómo se relaciona la densidad de columna de Hidrógeno N($H_2$) [mol/$cm^2$] con la potencia integrada del Monóxido de Carbono W(CO) en la velocidad [K$\frac{km}{s}$]
+Para la elaboración de este informe se recopilaron datos del \textrm{IV} cuadrante de la galaxia, entre las longitudes de 300° y 348° y una latitud que varia entre los -2° y 2°. Los datos se obtuvieron a patir de la potencia integrada en la línea de $CO$, que es un trazador de $H_2$. El Hidrógeno gaseoso es la molécula mas común del universo, pero al ser una molécula polar es muy dificil observarla en líneas rotacionales, en cambio, el $CO$ tiene un momento dipolar mucho más fuerte y por eso se utiliza como trazador de este gas. La Ecuación 1 muestra cómo se relaciona la densidad de columna de Hidrógeno N($H_2$) [mol/$cm^2$] con la potencia integrada del Monóxido de Carbono W(CO) en la velocidad [K$\frac{km}{s}$]
 
 \begin{equation}
     N(H_2) = \chi W(CO)
 \end{equation}
 
-La constante $\chi$ es medida experimentalmente y equivale a $2 \cdot 10^{20}$ $\frac{cm^{-2}}{K\frac{km}{s}}$.\\
+La constante $\chi$ es medida experimentalmente y se utilizó como $2 \cdot 10^{20}$ $\frac{cm^{-2}}{K\frac{km}{s}}$.\\
 
-En la primera parte de este estudio se utilizó la velocidad de N($H_2$) para la obtención de la curva de rotación de la galaxia. Esta curva representa la velocidad de rotación de cada punto en función de su distancia al centro galáctico. Para medir las velocidades se utiliza el sistema de referencia LSR (\emph{Local Standart of Rest}) este se define como un punto que se mueve con una órbita perfectamente circular en torno al centro de la galaxia, con un radio igual a la distancia galacto-céntrica del Sol. Se mueve con una velocidad de $220$ km/s y tiene un radio de giro de $8.5$ kpc. La órbita del Sol no es exactamente la misma a la que hace referencia el sisema LSR, ya que la órbita del Sol no es perfectamente circular.\\
+En la primera parte de este estudio se utilizó la velocidad de N($H_2$) para la obtención de la curva de rotación de la galaxia. Esta curva representa la velocidad de rotación de cada punto en función de su distancia al centro galáctico. Para medir las velocidades se utiliza el sistema de referencia LSR (\emph{Local Standart of Rest}) este se define como un punto que se mueve con una órbita perfectamente circular en torno al centro de la galaxia, con un radio igual a la distancia galacto-céntrica del Sol. Se mueve con una velocidad $V_0 = 220$ km/s y tiene un radio de giro $R_0=8.5$ kpc. La órbita del Sol no es exactamente la misma a la que hace referencia el sisema LSR, ya que la órbita del Sol no es perfectamente circular.\\
 
-Luego de obtener la curva de rotación, se obtendrá la corrugación de la galaxia a partir de las coordenadas de latitud, esta curva indica la forma que toma el plano galáctico en funcion de su distancia al centro.\\
+La velocidad que se utilizará será la velocidad terminal, esta velocidad se obtiene a partir del espectro de cada uno de los cuadrantes de latitud y longitud observados por el telescopio. La velocidad terminal corresponde a la primera velocidad tal que su temperatura de antena supere 5 veces el valor del error cuadratico medio para $T_{ant}$.\\
 
-Finalmente, se estudiará la distribución de masa en la galaxia, realizando un ajuste a la curva de rotación obtenida permitiendo determinar qué modelo es más adecuado. El resultado obtenido demostró que la masa de la Via Láctea se distribuye en un disco de densidad uniforme con una masa puntual en su centro.\\
+Luego de obtener la curva de rotación, se obtendrá la corrugación de la galaxia a partir de las coordenadas de latitud, esta curva muestra la forma que toman los puntos de velocidad tangencial en el plano galáctico, en función de su distancia al centro.\\
+
+Finalmente, se estudiará la distribución de masa en la galaxia, realizando un ajuste a la curva de rotación obtenida permitiendo determinar qué modelo es más adecuado. El resultado obtenido demostró que la masa de la Via Láctea se distribuye en un disco de densidad constante con una densidad $S_0 =5.888 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$] .\\
 
 \section{Curva de Rotación}
 \subsection{Marco Teórico}
-La obtencion de la curva de rotación requiere usar la ecuación maestra de la cinemática galáctica, esta ecuación se encuentra a partir del diagrama mostrado en la Figura 3, en donde se puede obtener:
+La obtención de la curva de rotación requiere usar la ecuación maestra de la cinemática galáctica, esta ecuación se encuentra a partir del diagrama mostrado en la Figura 3, en donde se puede obtener:
 
 \begin{figure}
   \centering
@@ -116,7 +120,7 @@ La obtencion de la curva de rotación requiere usar la ecuación maestra de la c
      V_{LSR} = V(R)cos(\alpha) - V(R_0)sen(l) 
 \end{equation}
 
-Luego se puede utlizar el teorema del seno, para despejar $cos(\alpha)$, utilizando tambien que $\beta = 90 + \alpha$.
+Luego se puede utlizar el teorema del seno, para despejar $cos(\alpha)$, utilizando también que $\beta = 90 + \alpha$.
 
 $$\frac{sen(l)}{R}=\frac{cos(\alpha)}{R_0}$$
 
@@ -128,14 +132,14 @@ Reemplazando en (2) se obtiene la ecuación maestra de la cinemática galáctica
     V_{LSR} = sen(l)(\frac{R_0}{R}V(R) - V(R_0))
 \end{equation}
 
-La velocidad $V_{LSR}$ es la única que se puede medir a través del efecto Doppler desde el Sistema Solar, ya que es la única componente que se va alejando del Sol. Para medir la velocidad tangencial se necesita entonces que $R = R_0 sen(l)$, reemplazando esto se tiene:
+La velocidad $V_{LSR}$ es la única que se puede medir a través del efecto Doppler desde el Sistema Solar, ya que es la única componente que se va alejando del Sol. Entonces, para medir la velocidad tangencial se necesita que $R = R_0 sen(l)$, reemplazando esto se tiene:
 
-$$ V(R=R_0 sen(l)) = V_{LSR} + V(R)sen(l)  $$
+$$ V(R=R_0 sen(l)) = V_{LSR} + V(R_0)sen(l)  $$
 
-Sin embargo, la curva de rotación necesita que las velocidades sean positivas ya que se esta representando un movimiento circular. En el cuadrante (IV), la longitud varía entre 270° y 360° por lo que $sen(l) < 0$, entonces se debe agregar valor absoluto a la ecuación, quedando la expresión final para la velocidad tangencial en función de $R$.
+Sin embargo, la curva de rotación se obtiene con velocidades positivas ya que se esta representando un movimiento circular. En el cuadrante (\textrm{IV}), la longitud varía entre 270° y 360° por lo que $sen(l) < 0$, entonces se debe agregar valor absoluto a la ecuación, quedando la expresión final para la velocidad tangencial en función de $R$.
 
 \begin{equation}
-  V ( R=R_0 sen(l)) =   |V_{LSR}| + V(R) |sen(l)| 
+  V ( R=R_0 sen(l)) =   |V_{LSR}| + V(R_0) |sen(l)| 
 \end{equation}
 
 Mientras que para la velocidad angular, simplemente se usa la relación $V=\omega R$ y la ecuación a utilizar será:
@@ -144,10 +148,12 @@ Mientras que para la velocidad angular, simplemente se usa la relación $V=\omeg
   \omega ( R=R_0 sen(l)) =  R_0 sen(l)  V ( R=R_0 sen(l))
 \end{equation}
 
-La velocidad de referencia es $V_0 = 220$ km/s y el radio será $R_0 = 8.5$ kpc.
+La velocidad de referencia es $V_0 = 220$ km/s y el radio será $R_0 = 8.5$ kpc.\\
+
+En la Figura 3 se observa que para una misma $V_LSR$ existen dos posibles distancias, la mas cercana;  $D_{1}$, y la lejana $D_{2}$. Como consideramos que $R=R_0 sen(l)$ entonces $\alpha=0$, de modo que $D_{1}=D_{2}=D=R_0cos(l)$, solucionando la ambigüedad de soluciones para la distancia. 
 
 \subsection{Detalle del Algoritmo}
-Inicialmente, para eliminar el ruido de los datos, se creó una función que recorre cada coordenada de latitud para una longitud dada, quedándose con la primera velocidad que sea 5 veces mayor al RMS (media cuadrática), guardándola en un arreglo. Despues se recorre cada coordenada de longitud aplicando esta función, obteniendo para cada longitud un arreglo de velocidades.\\
+Inicialmente, para eliminar el ruido de los datos, se creó una función que recorre cada coordenada de latitud para una longitud dada, quedándose con la primera velocidad que sea 5 veces mayor al RMS (media cuadrática), esta velocidad terminal se guarda en un arreglo. Después, se recorre cada coordenada de longitud aplicando esta función, obteniendo para cada longitud un arreglo de velocidades.\\
 
 Para cada una de las longitudes, se escoje el mayor valor de $V_{LSR}$ que corresponderá a un cierto radio $R=R_0 sen(l)$ según la Ecuación (4). Tanto la velocidad como el radio se guardan en su respectivo arreglo.\\
 
@@ -158,17 +164,17 @@ La curva de rotación obtenida para $V(R)$ se muestra en la Figura 4 y la de $\o
 
 \begin{figure}
   \centering
-  \includegraphics[height=7cm]{../graficos/imagenes/curvavr.png}
+  \includegraphics[height=7cm]{../graficos/curvavr.png}
   \caption{Curva de Rotación V(R) en función de la distancia al centro galáctico.}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[height=7cm]{../graficos/imagenes/curvaomegar.png}
+  \includegraphics[height=7cm]{../graficos/curvaomegar.png}
   \caption{Curva de Rotación $\omega(R)$ en función de la distancia al centro galáctico.}
 \end{figure}
 
-Se puede observar que la curva de $V(R)$ es creciente mientras que la curva de $\omega (R)$ es decreciente. Ambas curvas parten teniendo valores que dan saltos entre velocidades, pero que mas adelante se estabilizan. Además, ninguna de las dos parece tomar la forma de una funcion polinómica o exponencial/logarítmica.
+Se puede observar que la curva de $V(R)$ es creciente mientras que la curva de $\omega (R)$ es decreciente. Ambas curvas parten teniendo valores que dan saltos entre velocidades, pero que mas adelante se estabilizan. 
 
 \section{Corrugación del Plano}
 \subsection{Marco Teórico}
@@ -176,15 +182,15 @@ La corrugación de la galaxia se obtiene calculando la posición $Z$ del punto d
 
 \begin{figure}
   \centering
-  \includegraphics[height=4cm]{../graficos/imagenes/curvaomegar.png}
+  \includegraphics[height=4cm]{../graficos/imagenes/Corrugacion.jpg}
   \caption{Cálculo de Z a partir de D y $b_{Vmax}$.}
 \end{figure}
 
-Para calcular la corrugación del plano galáctico se debe obtener la posición $Z$ para cada radio $R$, a partir de la Figura 6 se puede calcular que:
+Para calcular la corrugación del plano galáctico se debe obtener la posición $Z$ para cada radio $R$, al observar la Figura 6 se puede calcular que:
 
 $$Z = D tan(b_{Vmax})$$
 
-A partir de la Figura 3 se tiene que si $R= R_0 sen(l)$ , entonces $D = R_0 cos(l)$, reemplazando se obtiene (aproximando $tan(b) \approx b $ )
+A partir de la Figura 3 se tiene que si $R = R_0 sen(l)$ , entonces $D = R_0 cos(l)$, al reemplazar se obtiene (aproximando $tan(b) \approx b $ )
 
 \begin{equation}
     Z(R=R_0 sen(l)) = R_0 sen(l) tan(b_{Vmax}) \approx R_0 sen(l) b_{Vmax}
@@ -193,26 +199,61 @@ A partir de la Figura 3 se tiene que si $R= R_0 sen(l)$ , entonces $D = R_0 cos(
 En donde $b_{Vmax}$ corresponde a la coordenada de latitud galáctica para la velocidad tangencial ($V_{LSR}_{max}$)
 
 \subsection{Detalle del Algoritmo}
-Se utilizó el mismo algoritmo de la obtención de la curva de rotacion, de modo que cuando el algoritmo guardaba la valocidad máxima para cada longitud, tambien guardaba la coordenada de latitud en que se encontraba. Asi se formó un arreglo para la coordenada $b_{Vmax}$. Luego se utilizó la Ecuacion (6) para obtener la corrugación del plano galáctico.
+Se utilizó el mismo algoritmo de la obtención de la curva de rotació
+n, de modo que cuando el algoritmo guardaba la velocidad máxima para cada longitud, también guardaba la coordenada de latitud en que se encontraba. Asi se formó un arreglo para la coordenada $b_{Vmax}$. Luego se utilizó la Ecuación (6) para obtener la corrugación del plano galáctico.
 
 \subsection{Resultados}
 La Figura 7 muestra la corrugación del plano galáctico, se puede ver que toma valores entre -0.3 kpc y 0.2 kpc, aunque se concentra principalmente en valores positivos para distancias $R<4.5$ y negativos para valores $R>4.5$.
 
 \begin{figure}
   \centering
-  \includegraphics[height=7cm]{../graficos/imagenes/curvaomegar.png}
+  \includegraphics[height=7cm]{../graficos/corr.png}
   \caption{Corrugación del plano galáctico.}
 \end{figure}
 
+El gráfico muestra que los valores de $Z$ son bastante bajos, lo que significaría que las velocidades tangenciales forman un plano. El valor máximo de $Z$ es de 0.245 kpc y el valor minimo corresponde a -2.887 kpc.
+
 \section{Ajuste de Modelo de Masa}
 \subsection{Marco Teórico}
-
-
-\subsection{Detalle del Algoritmo}
-Se definieron funciones que a partir de los parámetros del modelo, obtienen la velocidad de rotación en función del radio, tal como se resume en la Figura 7.
+En esta sección se determinará qué modelo de masa se adapta mejor a la curva de rotación obtenida en la primera parte. Las distribuciones de masa que se estudiarán se observan en la Figura 8.
 
 \begin{figure}
-    \begin{tabular}{| c | c |}
+    \begin{tabular}{| l | l|}
+     \hline
+    Distribucion de Masa      & Modelo de Masa  \\ \hline
+    Puntual 	              &	$M_0$	\\
+    Esférica                  &	$\frac{4}{3}\pi r^{3} \rho_0$	\\
+    Esférica con Masa Puntual &	$\frac{4}{3}\pi r^{3} \rho_0 + M_0$	\\
+    Disco       	          &	$\pi r^{2}S_0$	\\
+    Disco con Masa Puntual    &	$\pi r^{2}S_0 + M_0$	\\
+    \hline
+    \end{tabular}
+    \caption{Modelos de distribución de masa.}
+\end{figure}
+
+Todas las densidades $\rho$ y $S_0$ se consideran constantes y la masa puntual se ubica en el centro de la galaxia.\\
+
+Para calcular qué curva de rotación tiene cada modelo se considerará que los elementos de la galaxia orbitan circularmente alrededor del centro, considerando solo la atracción de gravedad. A partir de la ecuación de movimiento (polares) se puede obtener la velocidad de rotación en función del radio.
+
+$$ m(\ddot{r} - r\dot{\omega^{2}}) = \frac{-GMm}{r^2} $$
+
+Al ser un movimiento circular $r=cte$, entonces $\ddot{r}=0$.
+
+$$ \dot{\omega} = \sqrt{\frac{GM}{r^{3}}}  $$
+
+Usando la relación $\omega r = v$ se obtiene la Ecuación 7, que permitirá obtener la curva de rotación para cada modelo de masa:
+
+\begin{equation}
+ V(r) = \sqrt{\frac{GM}{r}}   
+\end{equation}
+
+Las unidades se adaptaron para que el resultado se obtenga en $km/s$, por lo que $G = 4.302 \cdot 10^{-6}$ $kpc \cdot M_{sol}^{-1} \cdot (\frac{km}{s})^{-2}$.
+
+\subsection{Detalle del Algoritmo}
+Se definieron funciones que, a partir de los parámetros del modelo, obtienen la velocidad de rotación en función del radio.
+
+\begin{figure}
+    \begin{tabular}{| l | c |}
      \hline
     Distribucion de Masa     & Parámetros  \\ \hline
     Puntual 	              &	$M_0$	\\
@@ -225,12 +266,51 @@ Se definieron funciones que a partir de los parámetros del modelo, obtienen la 
     \caption{Parámetros a ajustar de cada distribución de masa.}
 \end{figure}
 
-Luego se realizó un ajuste que permitiera obtener los parámetros que mejor se ajustaran a la curva de rotación y asi poder graficar la curva de rotacion  real y la obtenida según cada modelo. El ajuste se realiza usando un método no lineal de mínimos cuadrados.\\
+Luego, se realizó un ajuste que permitiera obtener los parámetros que mejor se ajustaran a la curva de rotación y asi poder graficar la curva de rotación  real y la obtenida según cada modelo. El ajuste se realiza usando un método no lineal de mínimos cuadrados.\\
 
 Para determinar cuál se adapta mejor a la curva de rotación, se calculó el error cuadrático medio para cada una de las distribuciones de masa.
 
 \subsection{Resultados}
+El ajuste de cada uno de los modelos de distribución de masa se ilustra en la Figura 10.
+
+\begin{figure}
+  \centering
+  \includegraphics[height=20cm]{../graficos/modelos.png}
+  \caption{Modelos de masa de la galaxia, en rojo; la curva de rotación real, en azul; la curva del modelo.}
+\end{figure}
+
+Se puede observar que el modelo de masa puntual entrega una curva decreciente, contraria a la de rotación que es creciente. La esfera uniforme, da una curva completamente recta mientras que la esfera con una masa puntual toma una forma convexa, el disco uniforme y el disco con una masa puntual toman una forma muy paecida, y son las que mejor se acercan a la curva de rotación real.\\
+
+Los parámetros ajustados de cada modelo y su error cuadrático medio se ven en la Figura 10.
+
+\begin{figure}
+    \begin{tabular}{| l | l | l | l | l | l |}
+     \hline
+    Distribución de Masa     &  $M_0$ [$M_{sol}$] & $\rho_0$ [$M_{sol}/kpc^{3}$] & $S_0$ [$M_{sol}/kpc^{2}$] & ECM [km/s]\\ \hline
+    Puntual 	              &	$3.228 \cdot 10^{10} $ & - & - & 74.504890729 	\\
+    Esférica                  &	- & $7.964 \cdot 10^{7} $ & - & 34.248852871 	\\
+    Esférica con Masa Puntual &	$7.981 \cdot 10^{9}$ & $6.372 \cdot 10^{7} $ & - & 21.806171500 \\
+    Disco       	          & - & - &	$5.888 \cdot 10^{8} $ & 14.783591622	\\
+    Disco con Masa Puntual    & $10.247$	& - & $5.888 \cdot 10^{8}$  & 14.783591623\\
+    \hline
+    \end{tabular}
+    \caption{Modelos de masa de la galaxia.}
+\end{figure}
+
+El modelo con el error cuadrático medio más bajo es el de disco con densidad uniforme, seguido por el de disco uniforme con masa puntual, la diferencia entre ambos es del orden de $10^8$ km/s.
 
 \section{Análisis y Conclusiones}
+Las curvas de rotación para V(R) y $\omega(R)$ toman una forma que se puede aproximar al modelo de masa de un disco de densidad uniforme o al de un disco con densidad uniforme y masa puntual, ya que la diferencia de error que hay entre ellos es despreciable (del orden de $10^{8}$ km/s), incluso, tienen la misma densidad superficial. Sin embargo, un error de 14 km/s sigue siendo alto, de hecho, la mayor distancia que hay entre la velocidad inidicada por el modelo y la de la curva de rotación es de 51.564 km/s. Es posible que un modelo de disco con una densidad del tipo $S(R) = S_0e^{k/R}$ sea más preciso, ya que para radios pequeños toma valores que se alejan mucho de $\ro_0$ y a medida que se aleja más va tomando valores que se asemejan mejor a un disco con una densidad constante. La masa puntual central aproximada por el modelo de disco ($10.247 M_{sol}$) es muy pequeña en comparacion a la del agujero negro supermasivo Sagiario A ($3.7 \cdot 10^{6} M_{sol}$). Además, el hecho de que tenga la misma densidad superficial que el modelo sin masa puntual y aún asi error más alto sugiere que la masa puntual en el centro no hace más que empeorar el ajuste.\\
+
+También hay que tener en cuenta que para este estudio se utilizó una sección del \textrm{IV} cuadrante (entre 300° y 348°), es decir, solo un 13\% de todos los valores posibles para longitud, esto significa que no se cuenta con una parte de los datos correspondientes al centro galáctico (entre 348° y 360°) haciendo que sea más difícil para el algoritmo ajustar una masa puntual en el centro sin tener datos sobre el comportamiento de las velocidades, esta  razón puede explicar que el modelo de disco uniforme y disco con masa puntual sean tan similares entre sí. Además, puede haber afectado en el cálculo considerar que las orbitas son perfectamente circulares, lo cual no se cumple siempre.\\
+
+La corrugación del plano galáctico tiene valores que dificilmente se podrian aproximar a una función sinusoidal como se indíca teóricamente. Tal vez con un set de datos más completo pueda encontrarse una mejor aproximación para el comportamiento de esta curva.\\
+
+Otro punto importante a considerar es que es que la galaxia no esta compuesta únicamente de nubes de gas con densidad constante, y es posible que las mediciones se hayan visto alteradas por zonas de mayor concentración de hidrógeno o la presencia de algún otro objeto astronómico que altere la observación o al trazador, ya sea estrellas, nebulosas, polvo, etc.\\
+
+En conclusión, a partir de los datos trabajados en este informe, el modelo que mejor se adapta a la curva de rotación es el de un disco con densidad uniforme $S_0 = 5.888 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$] , seguido por el de un disco con la misma densidad uniforme pero con una masa puntual de  $10.247 M_{sol}$ ubicada en el centro de la galaxia . 
+
 \section{Anexos}
+\href{https://github.com/vecheto/astro_experimental/tree/main/Tarea\%202}{Repositorio en GitHub}
+
 \end{document}
