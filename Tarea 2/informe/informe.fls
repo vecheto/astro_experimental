@@ -1,7 +1,7 @@
-PWD c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2
+PWD c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe
 INPUT C:\Users\Vicente\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\informe.tex
-OUTPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\informe.log
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\informe.tex
+OUTPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\informe.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
@@ -16,28 +16,28 @@ INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\template_config.tex
 INPUT C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty
@@ -1331,10 +1331,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmvtt.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmvtt.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmvtt.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmvtt10.tfm
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\informe.aux
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\informe.aux
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\informe.aux
-OUTPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\informe.aux
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\informe.aux
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\informe.aux
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\informe.aux
+OUTPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\informe.aux
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
@@ -1411,7 +1411,7 @@ INPUT C:\Program Files\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-OUTPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\informe.pdf
+OUTPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\informe.pdf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmr.fd
@@ -1482,31 +1482,46 @@ INPUT C:\Users\Vicente\AppData\Local\MiKTeX\pdftex\config\pdftex.map
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
-INPUT .\defaultimagefolder \..\graficos\imagenes\coordenadas_galacticas.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\coordenadas_galacticas.png
-INPUT defaultimagefolder \..\graficos\imagenes\coordenadas_galacticas.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\coordenadas_galacticas.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\coordenadas_galacticas.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\coordenadas_galacticas.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\coordenadas_galacticas.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\plano_galactico.jpg
-INPUT .\defaultimagefolder \..\graficos\imagenes\plano_galactico.jpg
-INPUT defaultimagefolder \..\graficos\imagenes\plano_galactico.jpg
-INPUT .\defaultimagefolder \..\graficos\imagenes\plano_galactico.jpg
-INPUT .\defaultimagefolder \..\graficos\imagenes\plano_galactico.jpg
-INPUT .\defaultimagefolder \..\graficos\imagenes\plano_galactico.jpg
-INPUT .\defaultimagefolder \..\graficos\imagenes\plano_galactico.jpg
+INPUT ..\graficos\imagenes\coordenadas_galacticas.png
+INPUT ..\graficos\imagenes\coordenadas_galacticas.png
+INPUT ..\graficos\imagenes\coordenadas_galacticas.png
+INPUT ..\graficos\imagenes\coordenadas_galacticas.png
+INPUT ..\graficos\imagenes\coordenadas_galacticas.png
+INPUT ..\graficos\imagenes\coordenadas_galacticas.png
+INPUT ..\graficos\imagenes\coordenadas_galacticas.png
+INPUT ..\graficos\imagenes\plano_galactico.jpg
+INPUT ..\graficos\imagenes\plano_galactico.jpg
+INPUT ..\graficos\imagenes\plano_galactico.jpg
+INPUT ..\graficos\imagenes\plano_galactico.jpg
+INPUT ..\graficos\imagenes\plano_galactico.jpg
+INPUT ..\graficos\imagenes\plano_galactico.jpg
+INPUT ..\graficos\imagenes\plano_galactico.jpg
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
-INPUT .\defaultimagefolder \..\graficos\imagenes\ecuacion_maestra.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\ecuacion_maestra.png
-INPUT defaultimagefolder \..\graficos\imagenes\ecuacion_maestra.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\ecuacion_maestra.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\ecuacion_maestra.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\ecuacion_maestra.png
-INPUT .\defaultimagefolder \..\graficos\imagenes\ecuacion_maestra.png
+INPUT ..\graficos\imagenes\ecuacion_maestra.png
+INPUT ..\graficos\imagenes\ecuacion_maestra.png
+INPUT ..\graficos\imagenes\ecuacion_maestra.png
+INPUT ..\graficos\imagenes\ecuacion_maestra.png
+INPUT ..\graficos\imagenes\ecuacion_maestra.png
+INPUT ..\graficos\imagenes\ecuacion_maestra.png
+INPUT ..\graficos\imagenes\ecuacion_maestra.png
+INPUT ..\graficos\curvavr.png
+INPUT ..\graficos\curvavr.png
+INPUT ..\graficos\curvavr.png
+INPUT ..\graficos\curvavr.png
+INPUT ..\graficos\curvavr.png
+INPUT ..\graficos\curvavr.png
+INPUT ..\graficos\curvavr.png
+INPUT ..\graficos\curvaomegar.png
+INPUT ..\graficos\curvaomegar.png
+INPUT ..\graficos\curvaomegar.png
+INPUT ..\graficos\curvaomegar.png
+INPUT ..\graficos\curvaomegar.png
+INPUT ..\graficos\curvaomegar.png
+INPUT ..\graficos\curvaomegar.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
@@ -1537,21 +1552,44 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\wasy\wasy5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ts1-lmr10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ts1-lmr7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ts1-lmr5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT ..\graficos\imagenes\Corrugacion.jpg
+INPUT ..\graficos\imagenes\Corrugacion.jpg
+INPUT ..\graficos\imagenes\Corrugacion.jpg
+INPUT ..\graficos\imagenes\Corrugacion.jpg
+INPUT ..\graficos\imagenes\Corrugacion.jpg
+INPUT ..\graficos\imagenes\Corrugacion.jpg
+INPUT ..\graficos\imagenes\Corrugacion.jpg
+INPUT ..\graficos\corr.png
+INPUT ..\graficos\corr.png
+INPUT ..\graficos\corr.png
+INPUT ..\graficos\corr.png
+INPUT ..\graficos\corr.png
+INPUT ..\graficos\corr.png
+INPUT ..\graficos\corr.png
+INPUT ..\graficos\modelos.png
+INPUT ..\graficos\modelos.png
+INPUT ..\graficos\modelos.png
+INPUT ..\graficos\modelos.png
+INPUT ..\graficos\modelos.png
+INPUT ..\graficos\modelos.png
+INPUT ..\graficos\modelos.png
 INPUT C:\Program Files\MiKTeX\tex\generic\stringenc\se-utf8.def
 INPUT C:\Program Files\MiKTeX\tex\generic\stringenc\se-utf8.def
 INPUT C:\Program Files\MiKTeX\tex\generic\stringenc\se-utf8.def
 INPUT C:\Program Files\MiKTeX\tex\generic\stringenc\se-utf8.def
 INPUT C:\Program Files\MiKTeX\tex\generic\stringenc\se-utf8.def
 INPUT C:\Program Files\MiKTeX\tex\generic\stringenc\se-utf8.def
-INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\TAREA 2\informe.aux
+INPUT c:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 2\informe\informe.aux
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmex10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
@@ -1580,5 +1618,7 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy6.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmvtt10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmvtt10.pfb

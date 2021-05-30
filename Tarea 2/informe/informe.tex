@@ -62,9 +62,9 @@
 
 % RESUMEN O ABSTRACT
 \begin{resumen}
-La Vía Lactea esta compuesta mayoritariamente por Hidrógeno gaseoso ($H_2$), la medición de su velocidad de rotación alrededor del centro de la galaxia en el cuadrante \textrm{IV} entre longitudes de 300° y 348°, permitió obtener una curva de rotación, que demostró que la velocidad es \textbf{creciente} a medida aumenta la distancia galacto-céntrica. A partir de las coordenadas galácticas de los puntos utilizados para medir la velocidad tangencial se obtuvo la curva de corrugación del plano galáctico, ubicando espacialmente aquellos puntos, sugiriendo que forman un plano con alturas que varian entre $Z=0.245$ kpc y $Z=-2.887$ kpc.\\
+La Vía Lactea esta compuesta mayoritariamente por Hidrógeno gaseoso ($H_2$), la medición de su velocidad de rotación alrededor del centro de la galaxia en el cuadrante \textrm{IV} entre longitudes de 300° y 348°, permitió obtener una curva de rotación, que demostró que la velocidad es \textbf{creciente} a medida aumenta la distancia galacto-céntrica. A partir de las coordenadas galácticas de los puntos utilizados para medir la velocidad tangencial se obtuvo la curva de corrugación del plano galáctico, ubicando espacialmente aquellos puntos, sugiriendo que forman un plano con alturas que oscilan entre $Z=0.24$ kpc y $Z=-0.21$ kpc.\\
 
-Finalmente se compararon diferentes modelos de distribución de masa de la galaxía, obeniendo que el mejor modelo corrresponde al de un disco con densidad superficial uniforme $S_0 = 5.888 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$].
+Finalmente se compararon diferentes modelos de distribución de masa de la galaxía, obeniendo que el mejor modelo corrresponde al de un disco con densidad superficial uniforme $S_0 = 5.779 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$] y masa central puntual $M_0 = 5.320 \cdot 10^{9}$ [$M_{sol}$].
 \end{resumen}
 
 
@@ -104,7 +104,7 @@ La velocidad que se utilizará será la velocidad terminal, esta velocidad se ob
 
 Luego de obtener la curva de rotación, se obtendrá la corrugación de la galaxia a partir de las coordenadas de latitud, esta curva muestra la forma que toman los puntos de velocidad tangencial en el plano galáctico, en función de su distancia al centro.\\
 
-Finalmente, se estudiará la distribución de masa en la galaxia, realizando un ajuste a la curva de rotación obtenida permitiendo determinar qué modelo es más adecuado. El resultado obtenido demostró que la masa de la Via Láctea se distribuye en un disco de densidad constante con una densidad $S_0 =5.888 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$] .\\
+Finalmente, se estudiará la distribución de masa en la galaxia, realizando un ajuste a la curva de rotación obtenida permitiendo determinar qué modelo es más adecuado. El resultado obtenido demostró que la masa de la Via Láctea se distribuye en un disco de densidad uniforme $S_0 = 5.779 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$] con una masa puntual central de  $5.320 \cdot 10^{9}$ [$M_{sol}$].
 
 \section{Curva de Rotación}
 \subsection{Marco Teórico}
@@ -153,7 +153,7 @@ La velocidad de referencia es $V_0 = 220$ km/s y el radio será $R_0 = 8.5$ kpc.
 En la Figura 3 se observa que para una misma $V_LSR$ existen dos posibles distancias, la mas cercana;  $D_{1}$, y la lejana $D_{2}$. Como consideramos que $R=R_0 sen(l)$ entonces $\alpha=0$, de modo que $D_{1}=D_{2}=D=R_0cos(l)$, solucionando la ambigüedad de soluciones para la distancia. 
 
 \subsection{Detalle del Algoritmo}
-Inicialmente, para eliminar el ruido de los datos, se creó una función que recorre cada coordenada de latitud para una longitud dada, quedándose con la primera velocidad que sea 5 veces mayor al RMS (media cuadrática), esta velocidad terminal se guarda en un arreglo. Después, se recorre cada coordenada de longitud aplicando esta función, obteniendo para cada longitud un arreglo de velocidades.\\
+Inicialmente, para eliminar el ruido de los datos y obtener las velocidades terminales, se creó una función que recorre cada coordenada de latitud para una longitud dada, limpiando el ruido mediante \texttt{sigma clip} y luego quedándose con la primera velocidad que sea 5 veces mayor al RMS (media cuadrática), esta velocidad terminal se guarda en un arreglo. Después, se recorre cada coordenada de longitud aplicando esta función, obteniendo para cada longitud un arreglo de velocidades.\\
 
 Para cada una de las longitudes, se escoje el mayor valor de $V_{LSR}$ que corresponderá a un cierto radio $R=R_0 sen(l)$ según la Ecuación (4). Tanto la velocidad como el radio se guardan en su respectivo arreglo.\\
 
@@ -203,7 +203,7 @@ Se utilizó el mismo algoritmo de la obtención de la curva de rotació
 n, de modo que cuando el algoritmo guardaba la velocidad máxima para cada longitud, también guardaba la coordenada de latitud en que se encontraba. Asi se formó un arreglo para la coordenada $b_{Vmax}$. Luego se utilizó la Ecuación (6) para obtener la corrugación del plano galáctico.
 
 \subsection{Resultados}
-La Figura 7 muestra la corrugación del plano galáctico, se puede ver que toma valores entre -0.3 kpc y 0.2 kpc, aunque se concentra principalmente en valores positivos para distancias $R<4.5$ y negativos para valores $R>4.5$.
+La Figura 7 muestra la corrugación del plano galáctico, se puede ver que toma valores entre -0.21 kpc y 0.24 kpc y los valores oscilan en torno a la posicion $Z=0$.
 
 \begin{figure}
   \centering
@@ -211,7 +211,7 @@ La Figura 7 muestra la corrugación del plano galáctico, se puede ver que toma 
   \caption{Corrugación del plano galáctico.}
 \end{figure}
 
-El gráfico muestra que los valores de $Z$ son bastante bajos, lo que significaría que las velocidades tangenciales forman un plano. El valor máximo de $Z$ es de 0.245 kpc y el valor minimo corresponde a -2.887 kpc.
+El gráfico muestra que los valores de $Z$ son bastante bajos, lo que significaría que las velocidades tangenciales forman un plano. El valor de $Z$ oscila entre un máximo de 0.245 kpc y un valor minimo de -2.887 kpc.
 
 \section{Ajuste de Modelo de Masa}
 \subsection{Marco Teórico}
@@ -287,28 +287,28 @@ Los parámetros ajustados de cada modelo y su error cuadrático medio se ven en 
     \begin{tabular}{| l | l | l | l | l | l |}
      \hline
     Distribución de Masa     &  $M_0$ [$M_{sol}$] & $\rho_0$ [$M_{sol}/kpc^{3}$] & $S_0$ [$M_{sol}/kpc^{2}$] & ECM [km/s]\\ \hline
-    Puntual 	              &	$3.228 \cdot 10^{10} $ & - & - & 74.504890729 	\\
-    Esférica                  &	- & $7.964 \cdot 10^{7} $ & - & 34.248852871 	\\
-    Esférica con Masa Puntual &	$7.981 \cdot 10^{9}$ & $6.372 \cdot 10^{7} $ & - & 21.806171500 \\
-    Disco       	          & - & - &	$5.888 \cdot 10^{8} $ & 14.783591622	\\
-    Disco con Masa Puntual    & $10.247$	& - & $5.888 \cdot 10^{8}$  & 14.783591623\\
+    Puntual 	              &	$3.793 \cdot 10^{10} $ & - & - & 67.109 	\\
+    Esférica                  &	- & $8.770 \cdot 10^{7} $ & - & 46.201 	\\
+    Esférica con Masa Puntual &	$1.408 \cdot 10^{10}$ & $6.055 \cdot 10^{7} $ & - & 21.253 \\
+    Disco       	          & - & - &	$6.595 \cdot 10^{8} $ & 18.732	\\
+    Disco con Masa Puntual    & $5.320 \cdot 10^{9}$	& - & $5.779 \cdot 10^{8}$  & 14.647\\ 
     \hline
     \end{tabular}
     \caption{Modelos de masa de la galaxia.}
 \end{figure}
 
-El modelo con el error cuadrático medio más bajo es el de disco con densidad uniforme, seguido por el de disco uniforme con masa puntual, la diferencia entre ambos es del orden de $10^8$ km/s.
+El modelo con el error cuadrático medio más bajo es el de disco con densidad uniforme y masa puntual, seguido por el disco uniforme sin masa puntual, en promedio, la diferencia entre los valores predichos por el modelo de disco uniforme y de disco uniforme con masa puntual es de 9.029 km/s, y la máxima distancia entre ambos se da para radios pequeños llegando a una diferencia de 38.06 km/s.
 
 \section{Análisis y Conclusiones}
-Las curvas de rotación para V(R) y $\omega(R)$ toman una forma que se puede aproximar al modelo de masa de un disco de densidad uniforme o al de un disco con densidad uniforme y masa puntual, ya que la diferencia de error que hay entre ellos es despreciable (del orden de $10^{8}$ km/s), incluso, tienen la misma densidad superficial. Sin embargo, un error de 14 km/s sigue siendo alto, de hecho, la mayor distancia que hay entre la velocidad inidicada por el modelo y la de la curva de rotación es de 51.564 km/s. Es posible que un modelo de disco con una densidad del tipo $S(R) = S_0e^{k/R}$ sea más preciso, ya que para radios pequeños toma valores que se alejan mucho de $\ro_0$ y a medida que se aleja más va tomando valores que se asemejan mejor a un disco con una densidad constante. La masa puntual central aproximada por el modelo de disco ($10.247 M_{sol}$) es muy pequeña en comparacion a la del agujero negro supermasivo Sagiario A ($3.7 \cdot 10^{6} M_{sol}$). Además, el hecho de que tenga la misma densidad superficial que el modelo sin masa puntual y aún asi error más alto sugiere que la masa puntual en el centro no hace más que empeorar el ajuste.\\
+Las curvas de rotación para V(R) y $\omega(R)$ toman una forma que se puede aproximar al modelo de masa de un disco de densidad uniforme y masa puntual. Sin embargo, un error de 14 km/s sigue siendo alto, de hecho, la mayor distancia que hay entre la velocidad inidicada por el modelo y la de la curva de rotación es de 59.579 km/s. Es posible que un modelo de disco con una densidad del tipo $S(R) = S_0e^{k/R}$ sea más preciso, ya que para radios pequeños toma valores que se alejan mucho de $\ro_0$ y a medida que se aleja más va tomando valores que se asemejan mejor a un disco con una densidad constante. La masa puntual central aproximada por el modelo de disco ($5.320 \cdot 10^{9} M_{sol}$) tiene sentido teniendo en cuenta que en el centro de la galaxia se encuentra el agujero negro super masivo Sagitario A ($3.7 \cdot 10^{6} M_{sol}$) y su disco de acreción y zonas cercanas de densidad muy alta, en este aspecto se considera que el cálculo de la masa puntual calculada por el modelo fue efectiva.  Tanto las masas puntuales como las densidades de cada modelo tienen un orden de magnitud similar entre ellas y sus diferencias radican principalmente en la distribución.\\
 
-También hay que tener en cuenta que para este estudio se utilizó una sección del \textrm{IV} cuadrante (entre 300° y 348°), es decir, solo un 13\% de todos los valores posibles para longitud, esto significa que no se cuenta con una parte de los datos correspondientes al centro galáctico (entre 348° y 360°) haciendo que sea más difícil para el algoritmo ajustar una masa puntual en el centro sin tener datos sobre el comportamiento de las velocidades, esta  razón puede explicar que el modelo de disco uniforme y disco con masa puntual sean tan similares entre sí. Además, puede haber afectado en el cálculo considerar que las orbitas son perfectamente circulares, lo cual no se cumple siempre.\\
+La corrugación del plano galáctico tiene valores que dificilmente se podrian aproximar a una función sinusoidal como se indíca teóricamente, sin embargo, se observan pequeñas variaciones en torno a un punto de equilibrio lo cual ayudaría a obtener una relación mas fiel al modelo teórico. Tal vez con un set de datos más completo pueda encontrarse una mejor aproximación para el comportamiento de esta curva.\\
 
-La corrugación del plano galáctico tiene valores que dificilmente se podrian aproximar a una función sinusoidal como se indíca teóricamente. Tal vez con un set de datos más completo pueda encontrarse una mejor aproximación para el comportamiento de esta curva.\\
+Por otro lado, también hay que tener en cuenta que para este estudio se utilizó una sección del \textrm{IV} cuadrante (entre 300° y 348°), es decir, solo un 13\% de todos los valores posibles para longitud, esto significa que no se cuenta con una parte de los datos correspondientes al centro galáctico (entre 348° y 360°) haciendo que sea más difícil para el algoritmo ajustar una masa puntual en el centro sin tener datos sobre el comportamiento de las velocidades. Además, puede haber afectado en el cálculo considerar que las orbitas son perfectamente circulares, lo cual no se cumple siempre.\\
 
-Otro punto importante a considerar es que es que la galaxia no esta compuesta únicamente de nubes de gas con densidad constante, y es posible que las mediciones se hayan visto alteradas por zonas de mayor concentración de hidrógeno o la presencia de algún otro objeto astronómico que altere la observación o al trazador, ya sea estrellas, nebulosas, polvo, etc.\\
+Otro punto importante a considerar es que es que la galaxia no esta compuesta únicamente de nubes de gas con densidad constante, y es posible que las mediciones se hayan visto alteradas por zonas de mayor concentración de hidrógeno o la presencia de algún otro objeto astronómico que altere la observación o al trazador, ya sea estrellas, nebulosas, polvo, etc, produciendo datos más ruidosos que puedan alterar el desarrollo del estudio.\\
 
-En conclusión, a partir de los datos trabajados en este informe, el modelo que mejor se adapta a la curva de rotación es el de un disco con densidad uniforme $S_0 = 5.888 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$] , seguido por el de un disco con la misma densidad uniforme pero con una masa puntual de  $10.247 M_{sol}$ ubicada en el centro de la galaxia . 
+En conclusión, a partir de los datos trabajados en este informe, el modelo que mejor se adapta a la curva de rotación es el de un disco con densidad uniforme $S_0 = 5.779 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$] con una masa puntual de  $5.320 \cdot 10^{9}$ [$M_{sol}$] ubicada en el centro de la galaxia . 
 
 \section{Anexos}
 \href{https://github.com/vecheto/astro_experimental/tree/main/Tarea\%202}{Repositorio en GitHub}
