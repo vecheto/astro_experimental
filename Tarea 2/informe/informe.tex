@@ -203,15 +203,13 @@ Se utilizó el mismo algoritmo de la obtención de la curva de rotació
 n, de modo que cuando el algoritmo guardaba la velocidad máxima para cada longitud, también guardaba la coordenada de latitud en que se encontraba. Asi se formó un arreglo para la coordenada $b_{Vmax}$. Luego se utilizó la Ecuación (6) para obtener la corrugación del plano galáctico.
 
 \subsection{Resultados}
-La Figura 7 muestra la corrugación del plano galáctico, se puede ver que toma valores entre -0.21 kpc y 0.24 kpc y los valores oscilan en torno a la posicion $Z=0$.
+La Figura 7 muestra la corrugación del plano galáctico, se puede ver que toma valores entre -0.21 kpc y 0.24 kpc y los valores oscilan en torno a la posicion $Z=0$ y son muy bajos en comparación al radio, esto indica que los puntos donde se ubican las velocidades tangenciales están contenidos en un mismo plano aproximadamente.
 
 \begin{figure}
   \centering
   \includegraphics[height=7cm]{../graficos/corr.png}
   \caption{Corrugación del plano galáctico.}
 \end{figure}
-
-El gráfico muestra que los valores de $Z$ son bastante bajos, lo que significaría que las velocidades tangenciales forman un plano. El valor de $Z$ oscila entre un máximo de 0.245 kpc y un valor minimo de -2.887 kpc.
 
 \section{Ajuste de Modelo de Masa}
 \subsection{Marco Teórico}
@@ -300,7 +298,7 @@ Los parámetros ajustados de cada modelo y su error cuadrático medio se ven en 
 El modelo con el error cuadrático medio más bajo es el de disco con densidad uniforme y masa puntual, seguido por el disco uniforme sin masa puntual, en promedio, la diferencia entre los valores predichos por el modelo de disco uniforme y de disco uniforme con masa puntual es de 9.029 km/s, y la máxima distancia entre ambos se da para radios pequeños llegando a una diferencia de 38.06 km/s.
 
 \section{Análisis y Conclusiones}
-Las curvas de rotación para V(R) y $\omega(R)$ toman una forma que se puede aproximar al modelo de masa de un disco de densidad uniforme y masa puntual. Sin embargo, un error de 14 km/s sigue siendo alto, de hecho, la mayor distancia que hay entre la velocidad inidicada por el modelo y la de la curva de rotación es de 59.579 km/s. Es posible que un modelo de disco con una densidad del tipo $S(R) = S_0e^{k/R}$ sea más preciso, ya que para radios pequeños toma valores que se alejan mucho de $\ro_0$ y a medida que se aleja más va tomando valores que se asemejan mejor a un disco con una densidad constante. La masa puntual central aproximada por el modelo de disco ($5.320 \cdot 10^{9} M_{sol}$) tiene sentido teniendo en cuenta que en el centro de la galaxia se encuentra el agujero negro super masivo Sagitario A ($3.7 \cdot 10^{6} M_{sol}$) y su disco de acreción y zonas cercanas de densidad muy alta, en este aspecto se considera que el cálculo de la masa puntual calculada por el modelo fue efectiva.  Tanto las masas puntuales como las densidades de cada modelo tienen un orden de magnitud similar entre ellas y sus diferencias radican principalmente en la distribución.\\
+La curva de rotación para V(R) toma una forma que se puede aproximar al modelo de masa de un disco de densidad uniforme y masa puntual. Sin embargo, un error de 14 km/s sigue siendo alto, de hecho, la mayor distancia que hay entre la velocidad inidicada por el modelo y la de la curva de rotación es de 59.579 km/s. Es posible que un modelo de disco con una densidad del tipo $S(R) = S_0e^{k/R}$ sea más preciso, ya que para radios pequeños toma valores que se alejan mucho de $S_0$ y a medida que se aleja más va tomando valores que se asemejan mejor a un disco con una densidad constante. La masa puntual central aproximada por el modelo de disco ($5.320 \cdot 10^{9} M_{sol}$) tiene sentido teniendo en cuenta que en el centro de la galaxia se encuentra el agujero negro super masivo Sagitario A ($3.7 \cdot 10^{6} M_{sol}$) con su disco de acreción y zonas cercanas de densidad muy alta, en este aspecto se considera que el cálculo de la masa puntual calculada por el modelo fue efectiva.  Tanto las masas puntuales como las densidades de cada modelo tienen un orden de magnitud similar entre ellas y sus diferencias radican principalmente en la distribución.\\
 
 La corrugación del plano galáctico tiene valores que dificilmente se podrian aproximar a una función sinusoidal como se indíca teóricamente, sin embargo, se observan pequeñas variaciones en torno a un punto de equilibrio lo cual ayudaría a obtener una relación mas fiel al modelo teórico. Tal vez con un set de datos más completo pueda encontrarse una mejor aproximación para el comportamiento de esta curva.\\
 
