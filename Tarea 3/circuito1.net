@@ -1,0 +1,9 @@
+* C:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 3\circuito1.asc
+V1 N001 0 V
+D1 N001 N002 1N914
+R1 N002 0 1k
+.model D D
+.lib C:\Users\Vicente\OneDrive\Documentos\LTspiceXVII\lib\cmp\standard.dio
+.dc V1 0 1.5 0.1
+.backanno
+.end
