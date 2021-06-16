@@ -1,5 +1,5 @@
 * C:\Users\Vicente\OneDrive\Documentos\U\2021-1\ASTRONOMIA EXPERIMENTAL\tareas_astro_exp\astro_experimental\Tarea 3\circuitos\asc\circuito2.asc
-V1 N002 0 SINE(0.2 0.2 1k) Rser=50
+V1 N002 0 SINE(0.5 0.2 1k) Rser=50
 D1 N001 out 1N914
 R1 out 0 1k
 B1 N001 N002 V=white(-1e3*time)/10 + white(1e3*time)/10
