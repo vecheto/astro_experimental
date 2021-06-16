@@ -1,0 +1,257 @@
+% Template:     Informe LaTeX
+% Documento:    Archivo principal
+% Versión:      7.1.9 (22/04/2021)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R.
+%        Facultad de Ciencias Físicas y Matemáticas
+%        Universidad de Chile
+%        pablo@ppizarror.com
+%
+% Manual template: [https://latex.ppizarror.com/informe]
+% Licencia MIT:    [https://opensource.org/licenses/MIT]
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[letterpaper,oneside]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\titulodelinforme {Informe de Mezcladores, Armonicos y Conversion de Frecuencia}
+\def\temaatratar {}
+
+\def\autordeldocumento {Vicente Maldonado}
+\def\nombredelcurso {Astronomía Experimental}
+\def\codigodelcurso {AS3201-2}
+
+\def\nombreuniversidad {Universidad de Chile}
+\def\nombrefacultad {Facultad de Ciencias Físicas y Matemáticas}
+\def\departamentouniversidad {Departamento de Astronomía}
+\def\imagendepartamento {departamentos/das}
+\def\imagendepartamentoparams {height=1.57cm}
+\def\localizacionuniversidad {Santiago, Chile}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\tablaintegrantes {
+\begin{tabular}{ll}
+	Autor:
+	& \begin{tabular}[t]{l}
+		Vicente Maldonado A. \\
+	\end{tabular} \\
+	Profesor:
+	& \begin{tabular}[t]{l}
+		Ricardo Finger C.
+	\end{tabular} \\
+	Auxiliar:
+	& \begin{tabular}[t]{l}
+		Javier Silva F.
+	\end{tabular} \\
+	\multicolumn{2}{l}{Fecha de entrega: \today} \\
+\end{tabular}}{
+}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+	
+% PORTADA
+\templatePortrait
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% RESUMEN O ABSTRACT
+%\begin{resumen}
+%La Vía Lactea esta compuesta mayoritariamente por Hidrógeno gaseoso ($H_2$), %la medición de su velocidad de rotación alrededor del centro de la galaxia en %el cuadrante \textrm{IV} entre longitudes de 300° y 348°, permitió obtener %una curva de rotación, que demostró que la velocidad es \textbf{creciente} a %medida aumenta la distancia galacto-céntrica. A partir de las coordenadas %galácticas de los puntos utilizados para medir la velocidad tangencial se %obtuvo la curva de corrugación del plano galáctico, ubicando espacialmente %aquellos puntos, sugiriendo que forman un plano con alturas que oscilan entre %$Z=0.24$ kpc y $Z=-0.21$ kpc.\\
+%
+%Finalmente se compararon diferentes modelos de distribución de masa de la %galaxía, obeniendo que el mejor modelo corrresponde al de un disco con %densidad superficial uniforme $S_0 = 5.779 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$] %y masa central puntual $M_0 = 5.320 \cdot 10^{9}$ [$M_{sol}$].
+%\end{resumen}
+%
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\section{Introducción}
+Los mezcladores son dispositivos usados en detección y generación de señales. En este informe de laboratorio se estudiará el funcionamiento de un modelo basado en un único diodo.\\
+
+Inicialmente, se estudiará el circuito que se muestra en la Figura 1, este circuito se compone de un diodo (1N914) y una resistencia (1k$\Omega$) conectados en serie. La fuente entregará un voltaje constante $V_{in}= V_0$ que tomará valores entre $0$V y $1.5$V. Luego, con la diferencia de potencial en el diodo se obtendrá la corriente de este, considerando este valor se encontrará una expresión para la diferencia de potencial $V_{out}$ en función del voltaje de entrada($V_{in}$).\\
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{curvavr.png}
+  \caption{Circuito 1.}
+\end{figure}
+
+Posteriormente, se calculará el radio de curvatura de la función $V_{out}(V_{in})$, para encontrar el punto en que de máxima curvatura.\\
+
+Luego se interpondrá una fuente de ruido $B_1$ (Figura 2) y se inyectará un voltaje sinusoidal (resistencia de 50$\Omega$) con un DC Offset que varia entre $0$V y $1.5$ V, amplitud de $0.2$ mV y frecuencia de $1$ KHz. A partir de la transformada de Fourier de $V_{out}$ se obtendrán espectros para diferentes valores de DC Offset, encontrando el valor que maximiza los armónicos (punto de máximos armónicos). En este punto se realizará una aproximación de Taylor de orden 4  para obtener los armonicos y luego comparararlos con los valores obtenidos en el espectro.\\
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{curvavr.png}
+  \caption{Circuito 2.}
+\end{figure}
+
+Finalmente se simulará el circuito que se muestra en la Figura 3, en que se agrega una nueva fuente (mismo DC Offset y amplitud, pero con frecuencia de $1.2$ KHz) y una resistencia de $100\Omega$. Se estudiará el espectro obtenido en el espacio de Fourier y se discutirá sobre sus frecuencias y armónicos y señales upconverted y downconverted.
+
+\section{Marco Teórico}
+\subsection{Diodo y Mezclador Simple}
+Un diodo es un componente electrónico que permite el paso de corriente eléctrica en un solo sentido , además, la controla y resiste. La corriente que circula por un diodo viene dada por la siguiente expresión:
+
+\begin{equation}
+    I(V) = I_0(e^{\frac{q}{KT}(V_{in}-V_{b})}-1)
+\end{equation}
+
+En donde $V$ es la caída de potencial en los extremos del diodo, $q=1.6 \cdot 10^{-19}$ es la carga del electrón en Coulomb y $K= 1.38 \cdot 10^{-23}$ es la constante de Boltzmann. En la ecuación, se conocen todos los datos excepto $I_0$ (corriente de saturación) y $T$ (temperatura de la unión), para obtenerlos, se realizará un ajuste a los datos del simulador. En la curva $I-V$, el comportamiento no lineal del diodo se maximiza para el punto de máxima curvatura, es decir cuando el radio de curvatura sea mínimo.
+
+\subsection{Serie de Fourier}
+Toda función en un intervalo $[t_1,t_2]$ puede expresarse como Serie de Fourier:
+\begin{equation}
+    f(t) = a_0 + \sum_{n=1}^{\infty} a_n cos(n \omega_0 t) + \sum_{n=1}^{\infty} b_n sen(n \omega_0 t)
+\end{equation}
+En donde los coeficientes $a_n$ y $b_n$ se calculan como:
+\begin{equation}
+    a_n = \frac{2}{(t_2-t_1)}\int_{t_1}^{t_2}f(t)cos(n\omega_0t)dt
+\end{equation}
+\begin{equation}
+    b_n = \frac{2}{(t_2-t_1)}\int_{t_1}^{t_2}f(t)sen(n\omega_0t)dt
+\end{equation}
+
+Una función expresada como una Serie de Fourier es la suma infinita de senos y cosenos, cada $n$ entrega lo que se denomina un armónico y su respectiva frecuencia y contribución a la señal principal. El primer armónico se llama armónico fundamental. La constante $a_0$ representa una constante, en el caso de una señal de Voltaje, sería un DC OffSet. \\
+
+Al ingresar una señal $V_{in}$ a un medio no lineal, la señal saliente también tendrá armónicos, que en este caso representaran un DC Offset que es proporcional a la amplitud de la señal de entrada.
+
+\subsection{Mezclador Simple}
+Una resistencia conectada en serie con un diodo forman lo que se conoce como mezclador simple. En este circuito el potencial que interesa medir es $V_{out}$, que se obtiene con: \\
+
+$$ V_{out} = V_b - V_c$$
+
+Pero $V_c=0$ ya que está conectado a tierra, entonces $V_out$ corresponde a la caída de potencial en la resistencia ($V_{out}=V_b$), que se calcula fácilmente con Ley de Ohm, ya que se conoce la corriente, que es la misma que pasa por el diodo, ya que están conectados en serie, por lo tanto, el potencial $V_{out}$ es:
+
+$$V_{out} = R I_{D} $$
+\begin{equation}
+    V_{out}(V_{in})= R I_0(e^{\frac{q}{KT}(V_{in}-V_{out})}-1)
+\end{equation}
+
+Esta ecuación nos permite obtener $V_{out}$, pero no tiene solución analítica por lo que resolverá de forma numérica, afortunadamente, en LT Spice se puede obtener la curva de $V_{out}$ en función de $V_{in}$. 
+
+\subsection{Detectores}
+Un medio no lineal es útil como detector debido a que las frecuencias muy altas no pueden ser procesadas tan rápidamente, pero se puede hacer pasar la señal por un medio no lineal, lo cual permite estudiar sus armónicos fácilmente. Además se obtiene un componente DC el cual es proporcional a la amplitud de la señal original y también se puede medir de forma sencilla. 
+
+En el caso del mezclador simple, este corresponde a un detector que se aproxima al orden cuadrático, es decir la señal que sale es un polinomio de orden 2 para la señal que entra.
+
+$$V_{out} (t) = c_0 + c_1V_{in}(t) + c_2V_{in}^2(t) + ...$$
+
+Si la señal de entrada es de la forma $V_{in}=Acos(\omega t)$ entonces la señal que detectada toma la forma:
+
+$$V_{out}(t) = c_0 + \frac{c_2 A^2}{2} + c_1 A cos(\omega t) + \frac{c_2 A^2 cos(2 \omega t)}{2} + ...$$
+
+Vemos que el primer termino corresponde a la componente DC Offset mientras que el segundo corresponde al primer armónico y el tercero al segundo.
+
+
+\section{Resultados}
+
+Para la curva de $I-V$ del mezclador, se obtuvo la Figura 4. Los puntos discretos corresponden a los medidos en LT Spice mientras que la linea continua corresponde al ajuste. Los parámetros obtenidos del ajuste fueron de  $I_0= 2.671 \cdot 10^{-9}$ V y $T = 528.723$ K. El error cuadrático medio entre el modelo y los datos obtenidos corresponde a $0.0003$ mAmph. 
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{../graficos/curvavr.png}
+  \caption{Curva I-V.}
+\end{figure}
+
+Una vez obtenidos los parámetros del modelo, es posible calcular numéricamente la expresión (5) mediante un algoritmo para buscar las raíces de una función de $V_{out}$, con $V_{in}$ conocido (entre $0.0$V y $1.5$V). Los resultados obtenidos para $V_{out}(V_{in})$ se muestran en la Figura 5, en donde se observa que para voltajes de entrada pequeños, $V_{out}$ mantiene valores bajos, y que a partir de un valor de $V_{in}$ entre $0.4$V y $0.6$V el voltaje de salida empieza a subir, llegando a valores de hasta $0.919$V.
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{../graficos/curvavinvout.png}
+  \caption{Voltaje de Salida ($V_{out}$), en función del Voltaje de entrada ($V_{in}$).}
+\end{figure}
+
+Luego, para calcular el punto en que el medio alcanza su máximo comportamiento no-lineal, es necesario calcular el radio de curvatura y minimizarlo.
+
+\begin{equation}
+    R_c = \frac{|1+(\frac{df}{dx})^2|^{\frac{3}{2}}}{|\frac{d^2f}{dx^2}|}
+\end{equation}
+
+Las derivadas fueron calculadas numéricamente y el radio de curvatura se muestra en la Figura 6, aquí se observa que diverge para $V_{in} \rightarrow 0$, y que su mínimo se encuentra en $V_{in}= 0.5$ V, que corresponde a $R_c = 0.458$ y a un voltaje de salida $V_{out}=0.051$ V.
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{../radiocurvatura.png}
+  \caption{Radio de Curvatura de $V_{out}(V_{in})$.}
+\end{figure}
+
+A continuación, se cambió la fuente a una señal sinusoidal con una amplitud $A=0.2$V, frecuencia de $1$ KHz y un DC offset que varía entre $0$V y $1.5$V, adémas de una resistencia de $50\Omega$ seguido de una fuente de ruido con la función $V=white(-1e3*time)/10 + white(1e3*time)/10$. A partir de estos circuitos se obtuvo la Transformada de Fourier ( Serie de Fourier llevada al continuo) para cada uno de los DC Offset. El espectro (Transformada de Fourier) muestra las frecuencias de cada uno de los armónicos y su contribución a la señal $V_{out}$. 
+En la Figura 7 y 8 se observan los espectros con DC offset $0.3$V y $0.5$V respectivamente. 
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{radiocurvatura.png}
+  \caption{Espectro con DC Offset $0.3$V.}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{radiocurvatura.png}
+  \caption{Espectro con DC Offset $0.5$V.}
+\end{figure}
+
+Se puede notar que todos los armónicos toman valores más altos en $V_{in}=0.5$V, este valor se denomina punto de máximos armónicos que justamente toma este valor porque maximiza el comportamiento no lineal del diodo. Una prueba de esto se observa en la Figura 9, en donde se muestra el valor del segundo armónico para cada valor de DC Offset.
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{segundoarmonico.png}
+  \caption{Valor del segundo armónico ($2000$ Hz) para cada DC Offset.}
+\end{figure}
+
+Una vez determinado el valor de máximos armónicos, se pueden determinar los valores de los primeros cuatro armónicos, que se observan en la Figura 10.
+
+\begin{figure}
+\centering
+\begin{tabular}{| c | c |}
+\hline
+Armonico & Valor \\ \hline
+1 & -23.92 \\
+2 & -37.82 \\
+3 & -71.05 \\
+4 & -65.86 \hline
+\end{tabular}
+\caption{Armónicos con DC Offset = $0.5$V.}
+\end{figure}
+
+A continuación, se asume un $V_{in}= cos(\omega t) - V_0$, y se realizará una aproximación de Taylor de orden 4 en torno a $V_0 = 0.5$.
+
+\begin{equation}
+    V_{out}(V_{in}\approx V_0) = V_{out}(V_0) + dV (V_{in}-V_0) + \frac{d^2V}{2}(V_{in}-V_0)^2 + \frac{d^3V}{6}(V_{in}-V_0)^3+\frac{d^4V}{24}(V_{in}-V_0)^4
+\end{equation}
+
+Es la aproximación de Taylor de orden 4 en torno a $V_0$, en donde $d^nV$ es la $n$-esima derivada de $V_{out}$ respecto a $V_{in}$, evaluada en $V_0$. Hay que notar que la ecuación (7) se puede expresar como:
+
+\footnotesize   
+\begin{equation}
+    V_{out}(V_{in} \approx V_0) =  V_{out}(V_0) + \frac{d^2V}{4} + \frac{d^4V}{8} + cos(\omega t) (\frac{d^3V}{8} + dV) + cos(2\omega t) (\frac{d^2V}{4} + \frac{d^4V}{48}) + cos(3 \omega t) (\frac{d^3V}{8}) + cos(4 \omega t) (\frac{d^4V}{192})
+\end{equation}
+\footnotesize
+
+En la ecuación (8) se puede ver que se tiene una expresión similar al desarrollo de Serie de Fourier, en donde cada termino acompañado de $cos(n \omega t)$ representa el $n$-esimo armónico y el termino constante en el tiempo es un DC Offset. 
+
+Finalmente, agregamos una nueva fuente (idéntica a $V1$ pero con una frecuencia de $1.2$ KHz) y una resistencia ($100\Omega$), como se observa en la Figura 3, a partir de este circuito se obtiene el espectro ilustrado en la Figura 11.
+
+\begin{figure}
+  \centering
+  \includegraphics[height=7cm]{espectrocircuito4.png}
+  \caption{Espectro del Circuito con dos fuentes en paralelo.}
+\end{figure}
+
+En esta Figura se observa que los armónicos están mas cercanos entre sí, esto debido al fenómeno de de frecuencia upconverted y downconverted, que consiste en la suma de la suma y resta de las frecuencias de los armónicos, respectivamente.\\
+
+En el espectro. el segundo peak corresponde al armónico fundamental del voltaje $V1 = 1$KHz, y el tercero al fundamental de $V2=1.2$KHz, mientras que el primero es el downconverted, es por esto que se ubica en la frecuencia $V2 - V1 = 0.2$KHz. Luego, el cuarto y sexto peak corresponden al segundo armónico de V1 y V2, respectivamente, mientras que el quinto es la señal upconverted, con frecuencia de $V1+ V2 = 2.2$ Khz. Este análisis se repite de la misma forma a través del espectro.
+
+\section{Análisis y Conclusiones}
+
+\section{Anexos}
+\href{https://github.com/vecheto/astro_experimental/tree/main/Tarea\%202}{Repositorio en GitHub}
+
+\end{document}
