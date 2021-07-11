@@ -97,7 +97,7 @@ En donde $B$ es la separación de las antenas ($37.85$ m), $az$ con $el$ son el 
 
 La función de visibilidad, se obtiene integrando el patrón de radiación $P(\Omega)$ y el brillo $I(\Omega)$, considerando al sol como un disco circular.
 
-$$V = \int \int I(\Omega)P(\Omega)$$
+$$V = \int \int I(\Omega)P(\Omega)d\Omega$$
 
 Se integra con un brillo constante $I(\Omega)=I$ y un patrón de radiación $P(\Omega)=cos(\frac{2\pi B}{\lambda}cos(\theta))$, y parametrizando el disco solar como $x^2 + y^2 = R^2$, con $R$  el radio angular del Sol. El resultado para la visibilidad, en función del diámetro angular del Sol $(d)$, viene dado por la siguiente ecuación:
 
@@ -147,22 +147,24 @@ Una vez se obtienen los datos filtrados, es posible calcular la apertura a parti
   \caption{Ajuste de la función visibilidad (Naranja) y el valor absoluto de la temperatura de antena (Azul).}
 \end{figure}
 
-Los parámetros del ajuste indicaron que el diámetro angular del Sol es de \textbf{0.46°} en la mañana y de \textbf{0.62°} en la tarde, considerando una amplitud de la función de visibilidad de $2500$ K. El promedio de estos dos valores entrega un diámetro promedio de $0.54°$.
+Los parámetros del ajuste indicaron que el diámetro angular del Sol es de \textbf{0.46°} en la mañana y de \textbf{0.62°} en la tarde, considerando una amplitud de la función de visibilidad de $2500$ K. El promedio de estos dos valores entrega un diámetro promedio de \textbf{0.54°}.
 
 \section{Análisis y Conclusiones}
 El valor obtenido para el tamaño angular del Sol correspondía parcialmente al indiciado por la literatura, de 0.53°, muy cercano al promedio obtenido. Sin embargo, la variación del tamaño entre la mañana en la tarde es muy elevado (casi un $30\%$). Esto se puede deber principalmente a los errores asociados a la contaminación electromagnética en Santiago, existiendo muchas fuentes de ruido ya sean señales de radio , televisión, internet, etc. También es posible que durante el proceso de filtrado de datos se haya perdido mucha información.\\
 
 $$\theta_{arc} = 2 \frac{\lambda [cm]}{D [m]}$$
 
-Por otro lado, el diámetro angular del Sol comparado con el main beam, calculado con la expresión anterior y considerando el diámetro de la antena ($2.3$ m), para una sola antena es de $\teta_{arc} = 18347.8$ ($5.09°$), demasiado alto, sin embargo, al considerar ambas antenas mediante la interferometría, $\theta_{arc} = 1145$ ($0.3°$) con una distancia $B$ de $37.85$ m, se logra un número mucho mas bajo y es debido a esto que la técnica de observación fue efectiva.\\
+Por otro lado, el diámetro angular del Sol comparado con el main beam, calculado con la expresión anterior y considerando el diámetro de la antena ($2.3$ m), para una sola antena es de $\theta_{arc} = 18347.8$ ($5.09$°), demasiado alto, sin embargo, al considerar ambas antenas mediante la interferometría, $\theta_{arc} = 1145$ ($0.3$°) con una distancia $B$ de $37.85$ m, se logra un número mucho mas bajo y es debido a esto que la técnica de observación fue efectiva.\\
 
 Una de las posibles limitantes del interferómetro es que la función de visibilidad decae demasiado rápido y eso hizo que los datos no se ajustaran perfectamente al modelo, pero considerando que tener dos antenas de $2.3$ m es muchísimo más sencillo en términos tecnológicos y humanos que una sola antena de $37.5$ m, hace que la interferometría sea una alternativa viable y a la vez precisa.\\
 
 En conclusión, la interferometría es una técnica que permite obtener datos precisos utilizando una solida base teórica, tal como fue demostrado en el ajuste del modelo y calculo del diámetro angular del Sol.\\
- 
+
+
 \section{Anexos}
-\href{https://github.com/vecheto/astro_experimental/tree/main/Tarea\%204}{Repositorio en GitHub}\\
-\href{https://www.matem.unam.mx/~barot/clases/2012-2/24medicion.pdf}{Tamaños y distancias celestes}\\
-
-
+\begin{itemize}
+  \item \href{https://github.com/vecheto/astro_experimental/tree/main/Tarea\%204}{Repositorio en GitHub}
+  \item \href{https://www.matem.unam.mx/~barot/clases/2012-2/24medicion.pdf}{Tamaños y distancias celestes}
+\end{itemize} 
+ 
 \end{document}
