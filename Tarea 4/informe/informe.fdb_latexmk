@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1625968214 "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.tex" "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.pdf" "informe" 1625968214
+["pdflatex"] 1625970644 "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.tex" "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.pdf" "informe" 1625970644
   "../graficos/ajuste.png" 1625968117 35168 cd996184bcd8ac08ceb378dea3f69dae ""
   "../graficos/aperturas.png" 1625968118 27221 e4e005c9767af40a158e26691e89cb7b ""
   "../graficos/cleandata.png" 1625968118 67971 0a59bb781701506324a3d57506d12f5c ""
@@ -250,16 +250,16 @@
   "C:/Users/Vicente/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1616988332 9248940 c81a697b093cb3a48ae9fc41ee4aa53b ""
   "C:/Users/Vicente/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1616988131 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/departamentos/das" 0 -1 0 ""
-  "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.aux" 1625968214 9 a94a2480d3289e625eea47cd1b285758 ""
-  "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.tex" 1625968136 8618 cc0d20475a34c2aee68c9ff8eb8345d6 ""
+  "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.aux" 1625970644 9 a94a2480d3289e625eea47cd1b285758 ""
+  "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.tex" 1625970625 9645 ae7052226ecb27030996ab4cc675a0a7 ""
   "departamentos/das" 0 -1 0 ""
   "informe.aux" 0 -1 0 "pdflatex"
-  "informe.tex" 1625968136 8618 cc0d20475a34c2aee68c9ff8eb8345d6 ""
+  "informe.tex" 1625970625 9645 ae7052226ecb27030996ab4cc675a0a7 ""
   "template.tex" 1622215881 288951 b9ac4bd3945993b42da6d5876991eda7 ""
   "template_config.tex" 1622215881 16874 0979c7eb610f9e508e27ef36e9415cd5 ""
   (generated)
-  "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.pdf"
-  "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.log"
+  "informe.pdf"
   "informe.aux"
   "informe.log"
-  "informe.pdf"
+  "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.log"
+  "c:/Users/Vicente/OneDrive/Documentos/U/2021-1/ASTRONOMIA EXPERIMENTAL/tareas_astro_exp/astro_experimental/Tarea 4/informe/informe.pdf"

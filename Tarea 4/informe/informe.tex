@@ -60,14 +60,6 @@
 % CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
 \templatePagecfg
 
-% RESUMEN O ABSTRACT
-%\begin{resumen}
-%La Vía Lactea esta compuesta mayoritariamente por Hidrógeno gaseoso ($H_2$), %la medición de su velocidad de rotación alrededor del centro de la galaxia en %el cuadrante \textrm{IV} entre longitudes de 300° y 348°, permitió obtener %una curva de rotación, que demostró que la velocidad es \textbf{creciente} a %medida aumenta la distancia galacto-céntrica. A partir de las coordenadas %galácticas de los puntos utilizados para medir la velocidad tangencial se %obtuvo la curva de corrugación del plano galáctico, ubicando espacialmente %aquellos puntos, sugiriendo que forman un plano con alturas que oscilan entre %$Z=0.24$ kpc y $Z=-0.21$ kpc.\\
-%
-%Finalmente se compararon diferentes modelos de distribución de masa de la %galaxía, obeniendo que el mejor modelo corrresponde al de un disco con %densidad superficial uniforme $S_0 = 5.779 \cdot 10^{8}$ [$M_{sol}/kpc^{2}$] %y masa central puntual $M_0 = 5.320 \cdot 10^{9}$ [$M_{sol}$].
-%\end{resumen}
-%
-
 % CONFIGURACIONES FINALES
 \templateFinalcfg
 
@@ -80,7 +72,7 @@ El interferómetro cuenta con dos antenas de $2.3$ m de diámetro separadas $B =
 
 En paralelo, se obtuvo una expresión para la apertura $B_s$, que es la proyección de $B$ en el frente de onda plano, en función del azimut y elevación de la fuente.\\
 
-Finalmente, se realizó un ajuste de los datos obtenidos con el modelo de visibilidad del sol con un interferómetro de dos antenas, obtenido integrando el patrón de antena en la forma del disco solar, una vez realizado el ajuste se obtendrá el diámetro angular del Sol.
+Finalmente, se realizó un ajuste de los datos obtenidos con el modelo de visibilidad del sol con un interferómetro de dos antenas, obtenido integrando el patrón de antena en la forma del disco solar, una vez realizado el ajuste se obtendrá el diámetro angular del Sol. El resultado obtenido para el diámetro angular del Sol fue de \textbf{0.46°} en la mañana y de \textbf{0.62°} en la Tarde.
 
 \section{Marco Teórico}
 \begin{figure}
@@ -130,7 +122,7 @@ Los datos de los extremos corresponden al inicio del día y la medianoche, que t
   \caption{Datos de la temperatura de antena, luego de filtrar el amanecer y el anochecer y aplicar un filtro a las temperaturas altas.}
 \end{figure}
 
-A continuación, se realizó la transformada de Fourier para obtener los espectros, los cuales fueron filtrados, anulando las frecuencias menores a $0.003$ Hz y mayores a $0.05$ Hz, eliminando de este modo el DC Offset y el ruido a alta frecuencia.
+A continuación, se realizó la transformada de Fourier para obtener los espectros, los cuales fueron filtrados, anulando las frecuencias menores a $0.003$ Hz y mayores a $0.04$ Hz, eliminando de este modo el DC Offset y el ruido a alta frecuencia.
 
 \section{Resultados}
 El espectro y los datos luego de anular las frecuencias ruidosas, se observan en las Figuras 5 y 6 respectivamente.
@@ -152,15 +144,25 @@ Una vez se obtienen los datos filtrados, es posible calcular la apertura a parti
 \begin{figure}
   \centering
   \includegraphics[height=7cm]{../graficos/ajuste.png}
-  \caption{Ajuste de la función visibilidad y el valor absoluto de la temperatura de antena.}
+  \caption{Ajuste de la función visibilidad (Naranja) y el valor absoluto de la temperatura de antena (Azul).}
 \end{figure}
 
-Los parámetros del ajuste indicaron que el diámetro angular del Sol es de \textbf{0.46°} en la mañana y de \textbf{0.62°} en la tarde, considerando una amplitud de la función de visibilidad de $2500$ K.
+Los parámetros del ajuste indicaron que el diámetro angular del Sol es de \textbf{0.46°} en la mañana y de \textbf{0.62°} en la tarde, considerando una amplitud de la función de visibilidad de $2500$ K. El promedio de estos dos valores entrega un diámetro promedio de $0.54°$.
 
 \section{Análisis y Conclusiones}
+El valor obtenido para el tamaño angular del Sol correspondía parcialmente al indiciado por la literatura, de $0.53°$, muy cercano al promedio obtenido. Sin embargo, la variación del tamaño entre la mañana en la tarde es muy elevado (casi un $30\%$). Esto se puede deber principalmente a los errores asociados a la contaminación electromagnética en Santiago, existiendo muchas fuentes de ruido ya sean señales de radio , televisión, internet, etc. También es posible que durante el proceso de filtrado de datos se haya perdido mucha información.\\
 
+$$\theta_{arc} = 2 \frac{\lambda [cm]}{D [m]}$$
 
+Por otro lado, el diámetro angular del Sol comparado con el main beam, calculado con la expresión anterior y considerando el diámetro de la antena ($2.3$ m), para una sola antena es de $\teta_{arc} = 18347.8$ ($5.09°$), demasiado alto, sin embargo, al considerar ambas antenas mediante la interferometría, $\theta_{arc} = 1145$ ($0.3°$) con una distancia $B$ de $37.85$ m, se logra un número mucho mas bajo y es debido a esto que la técnica de observación fue efectiva.\\
+
+Una de las posibles limitantes del interferómetro es que la función de visibilidad decae demasiado rápido y eso hizo que los datos no se ajustaran perfectamente al modelo, pero considerando que tener dos antenas de $2.3$ m es muchísimo más sencillo en términos tecnológicos y humanos que una sola antena de $37.5$ m, hace que la interferometría sea una alternativa viable y a la vez precisa.\\
+
+En conclusión, la interferometría es una técnica que permite obtener datos precisos utilizando una solida base teórica, tal como fue demostrado en el ajuste del modelo y calculo del diámetro angular del Sol.\\
+ 
 \section{Anexos}
-\href{https://github.com/vecheto/astro_experimental/tree/main/Tarea\%202}{Repositorio en GitHub}
+\href{https://github.com/vecheto/astro_experimental/tree/main/Tarea\%204}{Repositorio en GitHub}\\
+\href{https://www.matem.unam.mx/~barot/clases/2012-2/24medicion.pdf}{Tamaños y distancias celestes}\\
+
 
 \end{document}
